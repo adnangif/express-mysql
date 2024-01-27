@@ -39,6 +39,7 @@ async function createRow(first_name,last_name,age){
 }
 
 
-console.log(await createRow("32sd","sdscx",34));
-console.log(await getAllRows());
+// console.log(await createRow("32sd","sdscx",34));
+// console.log(await getAllRows());
 
+export {getAllRows, getRecordById, createRow}

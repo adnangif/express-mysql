@@ -1,10 +1,13 @@
 import express from 'express';
+import {getAllRows,getRecordById,createRow} from './database.js'
 
 const app = express()
 
 
-app.get("/notes", (req,res) => {
-    res.send("Hello world!!")
+app.get("/notes", async (req,res) => {
+    const persons = await getAllRows();
+    res.status(201).send(persons);
+
 })
 
 app.listen(8080, () =>{
