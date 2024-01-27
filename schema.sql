@@ -7,5 +7,4 @@ first_name VARCHAR(40),
 last_name VARCHAR(40) NOT NULL,
 age integer NOT NULL,
 PRIMARY KEY(id)
-
 );
